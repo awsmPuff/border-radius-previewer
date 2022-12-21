@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  align-items: center;
+}
+.flex-c {
+  display: flex;
+  flex-direction: column;
+}
+.flex-r {
+  display: flex;
+  flex-direction: row;
+}
+
+main {
+  width: 30%;
+  height: 100vh;
+  padding: 3rem;
+  gap: 2rem;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.156);
+}
+
+section {
+  width: 70%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  filter: contrast();
+}
+
+.shape {
+  width: 20rem;
+  height: 16rem;
+  background-image: linear-gradient(
+    120deg,
+    rgb(229, 214, 159),
+    rgb(174, 174, 248)
+  );
+}
+button {
+  width: 100%;
+  height: 3rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: blueviolet;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.border-data {
+  gap: 2rem;
+}
+
+.radius-control {
+  margin-top: 2rem;
+  width: 100%;
+  gap: 1rem;
+  align-items: center;
+}
+.radius-control input {
+    width: 100%;
+}
+
+.custom-radius {
+  width: 100%;
+  position: relative;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 48%);
+  gap: 4%;
+  height: max-content;
+}
+.custom-radius p {
+  position: absolute;
+  top: -2rem;
+}
+.custom-radius input {
+  height: 2.5rem;
+  border-radius: 0.3rem;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+article {
+  height: 3rem;
+  padding: 0.3rem 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 0.3rem;
+  box-shadow: inset 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
+}

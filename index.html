@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Radius Previewer</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="flex-c">
+      <div class="border-data flex-c">
+        <div class="radius-control flex-c">
+          <p>Try the bar!</p>
+          <input
+            class="border-control"
+            type="range"
+            min="0"
+            max="200"
+            value="0"
+            step="1"
+          />
+          <div class="range"></div>
+        </div>
+
+        <div class="custom-radius">
+          <p>Custom border radius of the shape: (px)</p>
+          <div>
+            <label>Top Left:</label>
+            <input class="top-left" type="text" />
+          </div>
+          <div>
+            <label>Top Right:</label>
+            <input class="top-right" type="text" />
+          </div>
+          <div>
+            <label>Bottom Right:</label>
+            <input class="bottom-right" type="text" />
+          </div>
+          <div>
+            <label>Bottom Left:</label>
+            <input class="bottom-left" type="text" />
+          </div>
+        </div>
+        <button class="collect">Collect</button>
+      </div>
+
+      <article class="flex-r all">
+        border-radius:&nbsp;<span class="collect-data"></span>;
+      </article>
+      <button class="copy">Copy</button>
+    </main>
+    <section class="flex-r">
+      <div class="shape"></div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
